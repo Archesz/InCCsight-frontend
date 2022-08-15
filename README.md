@@ -22,3 +22,4 @@ Desenvolvimento da interface do software InCCsight (Software para analise e visu
 1. A comunicação com o terminal para iniciar a ferramenta é: `python app.py`
     - `python app.py -f ./Subject_00001 ./Subject_00002 ...`: -f passa o caminho de uma pasta (sujeito) podendo selecionar multiplos.
     - `python app.py -p ./Healt_Controls ./Condition_X` -p passa o caminho de pastas com vários sujeitos.
+  
