@@ -1,20 +1,22 @@
 import React from 'react'
-import Button from '../components/Button/Button'
 import '../styles/home.scss'
-
-import Menu from '../components/Menu/Menu'
-import InfoCard from '../components/InfoCard/InfoCard'
-
-import open from '../assets/images/open-source.png'
-import services from '../assets/images/services.png'
-import user from '../assets/images/user.png'
 
 function Home() {
 
     return (
-        <div className="home-container">
+        <div id="home-container">
             
-            Home
+            <div className="home-left">
+                
+                <h2 className='home-name'>InCCsight</h2>
+                <span className='home-slogan'>Analyze, Explore and Visualize</span>
+                <span className='home-descript'>The software to automate and facilitate the processing of your DTI data.</span>
+
+            </div>
+
+            <div className="home-right">
+
+            </div>
 
         </div>
     )

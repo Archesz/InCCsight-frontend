@@ -1,57 +1,46 @@
-.home-container{
+#home-container{
     width: 100%;
-    height: 98vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
 
-    #home-left{
-        width: 60%;
+    .home-cape{
+        position: relative;
+        width: 100%;
         height: 100%;
+        background-color: red;
+    }
+
+    .home-left{
+        width: 35vw;
+        box-shadow: 6px 0px 12px rgba(0, 0, 0, 0.4);
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        box-sizing: border-box;
+        padding-left: 60px;
 
-        .home-content{
-            width: 70%;
-            height: 80%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        .home-name{
+            font-weight: bold;
+            color: #3a3a3a;
+            font-size: 90px;
+        }
 
-            .home-title{
-                font-weight: bolder;
-                font-size: 24px;
-                color: var(--textPrimary);
-            }
+        .home-slogan{
+            margin-top: 12px;
+            font-size: 32px;
+            font-family: bold;
+        }
 
-            .home-subtitle{
-                font-weight: bold;
-                font-size: 56px;
-            }
-
-            .home-descript{
-                font-weight: lighter;
-                font-size: 16px;
-            }
-
+        .home-descript{
+            font-family: bold;
+            font-size: 16px;
+            margin-top: 16px;
         }
     }
 
-    #home-rigth{
-        width: 40%;
-        height: 100%;
-    }
-
-    #home-footer{
-        position: absolute;
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left: 3%;
-        bottom: 20px;
-        height: 140px;
+    .home-right{
+        width: 65vw;
     }
 
 }
