@@ -18,14 +18,35 @@ function createWindow(){
         show: false
     })
 
-    win.maximize()
-    win.show()
+    const splash = new BrowserWindow({
+        width: 780,
+        height: 380,
+        frame: false,
+        transparent: true, 
+        alwaysOnTop: true
+    })
 
-    win.loadURL(
-        isDev
-            ? 'http://localhost:3000'
-            : `file://${path.join(__dirname, '../build/index.html')}`
-    )
+    splash.loadURL(
+        `file://${path.join(__dirname, 'splash.html')}`
+    );
+    splash.center();    
+
+    setTimeout((() => {
+        splash.close();
+
+        win.loadURL(
+            isDev
+                ? 'http://localhost:3000'
+                : `file://${path.join(__dirname, '../build/index.html')}`
+        )
+        
+        win.maximize()
+        win.show();
+    }), 5000)
+
+    //
+    //win.show()
+
 
 }
 
