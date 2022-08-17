@@ -9,6 +9,7 @@ function createWindow(){
     const win = new BrowserWindow({
         width: 1200,
         height: 800,
+        icon: __dirname + '/favicon.ico',
         webPreferences: {
             nodeIntegration: true,
             enableRemoteModule: true,
@@ -19,8 +20,9 @@ function createWindow(){
     })
 
     const splash = new BrowserWindow({
-        width: 780,
-        height: 380,
+        width: 600,
+        height: 500,
+        icon: __dirname + '/favicon.ico',
         frame: false,
         transparent: true, 
         alwaysOnTop: true
@@ -42,7 +44,7 @@ function createWindow(){
         
         win.maximize()
         win.show();
-    }), 5000)
+    }), 3000)
 
     //
     //win.show()
